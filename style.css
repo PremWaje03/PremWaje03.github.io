@@ -1,36 +1,126 @@
-body {
-  font-family: Arial, sans-serif;
+* {
   margin: 0;
-  background: #f4f4f4;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f5f7fb;
   color: #333;
+  line-height: 1.6;
 }
 
-header {
+/* Navbar */
+nav {
   background: #0a192f;
-  color: #fff;
-  padding: 40px;
-  text-align: center;
+  color: white;
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-section {
-  padding: 20px;
-  margin: 15px;
-  background: #fff;
-  border-radius: 8px;
+nav ul {
+  list-style: none;
+  display: flex;
 }
 
-h2 {
-  color: #0a192f;
-}
-
-ul {
-  list-style: square;
+nav ul li {
   margin-left: 20px;
 }
 
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Hero */
+.hero {
+  background: linear-gradient(135deg, #0a192f, #112240);
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+}
+
+.hero p {
+  margin: 10px 0 20px;
+}
+
+.btn {
+  background: #64ffda;
+  color: #0a192f;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+/* Sections */
+section {
+  padding: 60px 40px;
+  max-width: 900px;
+  margin: auto;
+}
+
+section h2 {
+  margin-bottom: 20px;
+  color: #0a192f;
+}
+
+/* Skills */
+.skills span {
+  display: inline-block;
+  background: white;
+  padding: 8px 14px;
+  margin: 6px;
+  border-radius: 20px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* Projects */
+.project-card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.project-card a {
+  color: #0a192f;
+  font-weight: bold;
+}
+
+/* Contact */
+.resume {
+  display: inline-block;
+  margin-top: 15px;
+}
+
+/* Footer */
 footer {
   text-align: center;
-  padding: 15px;
+  padding: 20px;
   background: #0a192f;
-  color: #fff;
+  color: white;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+  }
+
+  nav ul {
+    margin-top: 10px;
+  }
+
+  section {
+    padding: 40px 20px;
+  }
 }
