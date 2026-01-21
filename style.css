@@ -1,19 +1,16 @@
-/* RESET */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* BASE */
 body {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  background-color: #f8fafc;
+  font-family: system-ui, sans-serif;
+  background: #f8fafc;
   color: #0f172a;
   line-height: 1.6;
 }
 
-/* LAYOUT */
 .container {
   max-width: 1100px;
   margin: auto;
@@ -24,7 +21,6 @@ body {
   max-width: 720px;
 }
 
-/* HEADER */
 .header {
   background: #020617;
 }
@@ -37,7 +33,7 @@ body {
 }
 
 .logo {
-  color: #ffffff;
+  color: white;
   font-size: 22px;
   font-weight: 700;
 }
@@ -50,39 +46,23 @@ body {
   color: #cbd5f5;
   margin-left: 24px;
   text-decoration: none;
-  font-size: 15px;
 }
 
 .nav a:hover {
-  color: #ffffff;
+  color: white;
 }
 
-/* HERO */
 .hero {
   background: #020617;
-  color: #ffffff;
+  color: white;
 }
 
 .hero-inner {
   display: grid;
   grid-template-columns: 1.2fr 0.8fr;
-  align-items: center;
   gap: 40px;
+  align-items: center;
   padding: 90px 0;
-}
-
-.hero-text h1 {
-  font-size: 42px;
-  margin-bottom: 16px;
-}
-
-.hero-text p {
-  color: #cbd5f5;
-  max-width: 520px;
-}
-
-.hero-buttons {
-  margin-top: 28px;
 }
 
 .hero-image img {
@@ -91,14 +71,17 @@ body {
   border: 4px solid #38bdf8;
 }
 
-/* BUTTONS */
+.hero-buttons {
+  margin-top: 25px;
+}
+
 .btn {
-  display: inline-block;
   padding: 12px 22px;
   border-radius: 8px;
   font-weight: 600;
   text-decoration: none;
   margin-right: 12px;
+  display: inline-block;
 }
 
 .primary {
@@ -109,24 +92,16 @@ body {
 .secondary {
   border: 2px solid #38bdf8;
   color: #38bdf8;
-  background: transparent;
 }
 
-/* SECTIONS */
 .section {
   padding: 80px 0;
 }
 
 .light {
-  background: #ffffff;
+  background: white;
 }
 
-.section h2 {
-  font-size: 28px;
-  margin-bottom: 18px;
-}
-
-/* SKILLS */
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
@@ -136,12 +111,10 @@ body {
 .skills-grid span {
   background: #f1f5f9;
   padding: 12px;
-  border-radius: 8px;
   text-align: center;
-  font-weight: 500;
+  border-radius: 8px;
 }
 
-/* PROJECTS */
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -149,33 +122,18 @@ body {
 }
 
 .project-card {
-  background: #ffffff;
+  background: white;
   padding: 26px;
   border-radius: 12px;
-  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 10px 24px rgba(0,0,0,0.08);
 }
 
-.project-card h3 {
-  margin-bottom: 10px;
-}
-
-.project-card a {
-  display: inline-block;
-  margin-top: 12px;
-  color: #0284c7;
-  font-weight: 600;
-  text-decoration: none;
-}
-
-/* FOOTER */
 .footer {
   text-align: center;
   padding: 28px;
-  font-size: 14px;
   color: #64748b;
 }
 
-/* RESPONSIVE */
 @media (max-width: 768px) {
   .hero-inner {
     grid-template-columns: 1fr;
