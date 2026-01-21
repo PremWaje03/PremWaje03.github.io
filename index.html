@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Prem Waje | Java Backend Developer</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-<header class="navbar">
-  <div class="container">
-    <h1 class="logo">Prem<span>.</span></h1>
-    <nav>
+<header class="header">
+  <div class="container header-inner">
+    <div class="logo">Prem<span>.</span></div>
+    <nav class="nav">
       <a href="#about">About</a>
       <a href="#skills">Skills</a>
       <a href="#projects">Projects</a>
@@ -21,32 +21,40 @@
 </header>
 
 <section class="hero">
-  <div class="container hero-content">
-    <div>
-      <h2>Java Backend Developer</h2>
-      <p>I build clean backend systems using Java, JDBC, SQL & Spring Boot.</p>
-      <a href="#projects" class="btn">View Projects</a>
-      <a href="resume.pdf" class="btn outline">Download Resume</a>
+  <div class="container hero-inner">
+    <div class="hero-text">
+      <h1>Java Backend Developer</h1>
+      <p>
+        I build clean, efficient backend applications using
+        <strong>Java, JDBC, SQL, and Spring Boot</strong>.
+      </p>
+      <div class="hero-buttons">
+        <a href="#projects" class="btn primary">View Projects</a>
+        <a href="resume.pdf" class="btn secondary">Download Resume</a>
+      </div>
     </div>
-    <img src="profile.jpg" alt="Prem" class="profile">
+    <div class="hero-image">
+      <img src="profile.jpg" alt="Prem Waje" />
+    </div>
   </div>
 </section>
 
 <section id="about" class="section">
   <div class="container narrow">
-    <h3>About Me</h3>
+    <h2>About Me</h2>
     <p>
-      Java backend developer with hands-on experience in Core Java, JDBC,
-      SQL, and MySQL. Currently learning Spring Boot and focused on writing
-      clean, maintainable code.
+      I am a Java backend developer with hands-on experience in building
+      real-world applications using Core Java, JDBC, SQL, and MySQL.
+      Currently learning Spring Boot and focused on writing clean,
+      maintainable, production-ready code.
     </p>
   </div>
 </section>
 
 <section id="skills" class="section light">
   <div class="container">
-    <h3>Skills</h3>
-    <div class="skills">
+    <h2>Skills</h2>
+    <div class="skills-grid">
       <span>Java</span>
       <span>Spring Boot</span>
       <span>JDBC</span>
@@ -62,20 +70,25 @@
 
 <section id="projects" class="section">
   <div class="container">
-    <h3>Projects</h3>
+    <h2>Projects</h2>
 
-    <div class="projects">
-      <div class="card">
-        <h4>Smart Inventory System</h4>
-        <p>Inventory management using Java & JDBC with database operations.</p>
+    <div class="projects-grid">
+      <div class="project-card">
+        <h3>Smart Inventory System</h3>
+        <p>
+          Inventory management system built using Java and JDBC with
+          database-driven operations.
+        </p>
         <a href="https://github.com/PremWaje03/Smart-Inventory-System" target="_blank">
           View on GitHub →
         </a>
       </div>
 
-      <div class="card">
-        <h4>Electricity Billing System</h4>
-        <p>Core Java + JDBC billing system with MySQL integration.</p>
+      <div class="project-card">
+        <h3>Electricity Billing System</h3>
+        <p>
+          Core Java + JDBC based billing management system with MySQL integration.
+        </p>
         <a href="https://github.com/PremWaje03/Electricity-Billing-System" target="_blank">
           View on GitHub →
         </a>
@@ -86,13 +99,16 @@
 
 <section id="contact" class="section light">
   <div class="container narrow">
-    <h3>Contact</h3>
-    <p>Email: <strong>wajeprem0301@gmail.com</strong></p>
-    <p>GitHub: <a href="https://github.com/PremWaje03">github.com/PremWaje03</a></p>
+    <h2>Contact</h2>
+    <p><strong>Email:</strong> wajeprem0301@gmail.com</p>
+    <p>
+      <strong>GitHub:</strong>
+      <a href="https://github.com/PremWaje03">github.com/PremWaje03</a>
+    </p>
   </div>
 </section>
 
-<footer>
+<footer class="footer">
   © 2026 Prem Waje
 </footer>
 
