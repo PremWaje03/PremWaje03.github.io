@@ -1,17 +1,19 @@
+/* RESET */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* BASE */
 body {
-  font-family: system-ui, sans-serif;
-  background: #f8fafc;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background-color: #f8fafc;
   color: #0f172a;
   line-height: 1.6;
 }
 
-/* Layout */
+/* LAYOUT */
 .container {
   max-width: 1100px;
   margin: auto;
@@ -19,144 +21,172 @@ body {
 }
 
 .narrow {
-  max-width: 700px;
+  max-width: 720px;
 }
 
-/* Navbar */
-.navbar {
+/* HEADER */
+.header {
   background: #020617;
 }
 
-.navbar .container {
+.header-inner {
+  height: 70px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 70px;
 }
 
 .logo {
-  color: white;
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: 700;
 }
 
 .logo span {
   color: #38bdf8;
 }
 
-nav a {
+.nav a {
   color: #cbd5f5;
-  margin-left: 20px;
+  margin-left: 24px;
   text-decoration: none;
+  font-size: 15px;
 }
 
-nav a:hover {
-  color: white;
+.nav a:hover {
+  color: #ffffff;
 }
 
-/* Hero */
+/* HERO */
 .hero {
   background: #020617;
-  color: white;
+  color: #ffffff;
 }
 
-.hero-content {
+.hero-inner {
   display: grid;
   grid-template-columns: 1.2fr 0.8fr;
   align-items: center;
   gap: 40px;
-  padding: 80px 0;
+  padding: 90px 0;
 }
 
-.profile {
-  width: 240px;
+.hero-text h1 {
+  font-size: 42px;
+  margin-bottom: 16px;
+}
+
+.hero-text p {
+  color: #cbd5f5;
+  max-width: 520px;
+}
+
+.hero-buttons {
+  margin-top: 28px;
+}
+
+.hero-image img {
+  width: 260px;
   border-radius: 50%;
   border: 4px solid #38bdf8;
 }
 
-/* Buttons */
+/* BUTTONS */
 .btn {
   display: inline-block;
-  margin-top: 20px;
-  margin-right: 10px;
   padding: 12px 22px;
-  background: #38bdf8;
-  color: #020617;
-  text-decoration: none;
   border-radius: 8px;
   font-weight: 600;
+  text-decoration: none;
+  margin-right: 12px;
 }
 
-.btn.outline {
-  background: transparent;
-  color: #38bdf8;
+.primary {
+  background: #38bdf8;
+  color: #020617;
+}
+
+.secondary {
   border: 2px solid #38bdf8;
+  color: #38bdf8;
+  background: transparent;
 }
 
-/* Sections */
+/* SECTIONS */
 .section {
   padding: 80px 0;
 }
 
 .light {
-  background: white;
+  background: #ffffff;
 }
 
-h3 {
-  margin-bottom: 20px;
+.section h2 {
   font-size: 28px;
+  margin-bottom: 18px;
 }
 
-/* Skills */
-.skills {
+/* SKILLS */
+.skills-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-  gap: 15px;
+  gap: 14px;
 }
 
-.skills span {
+.skills-grid span {
   background: #f1f5f9;
   padding: 12px;
-  text-align: center;
   border-radius: 8px;
+  text-align: center;
+  font-weight: 500;
 }
 
-/* Projects */
-.projects {
+/* PROJECTS */
+.projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 30px;
+  gap: 28px;
 }
 
-.card {
-  background: white;
-  padding: 25px;
+.project-card {
+  background: #ffffff;
+  padding: 26px;
   border-radius: 12px;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
 }
 
-.card a {
+.project-card h3 {
+  margin-bottom: 10px;
+}
+
+.project-card a {
   display: inline-block;
-  margin-top: 10px;
+  margin-top: 12px;
   color: #0284c7;
   font-weight: 600;
   text-decoration: none;
 }
 
-/* Footer */
-footer {
+/* FOOTER */
+.footer {
   text-align: center;
-  padding: 25px;
-  color: #64748b;
+  padding: 28px;
   font-size: 14px;
+  color: #64748b;
 }
 
-/* Responsive */
+/* RESPONSIVE */
 @media (max-width: 768px) {
-  .hero-content {
+  .hero-inner {
     grid-template-columns: 1fr;
     text-align: center;
   }
 
-  .profile {
+  .hero-image img {
     margin-top: 30px;
+  }
+
+  .nav {
+    display: none;
   }
 }
