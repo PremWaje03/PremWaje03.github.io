@@ -3,88 +3,118 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Prem Waje | Java Developer</title>
+  <title>Prem Waje | Java Backend Developer</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-<nav>
-  <h2>PremWaje</h2>
-  <ul>
-    <li><a href="#about">About</a></li>
-    <li><a href="#skills">Skills</a></li>
-    <li><a href="#projects">Projects</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
-</nav>
-
-<header class="hero">
-  <img src="profile.jpg" class="profile-img" />
-  <h1>Hi, I'm Prem 👋</h1>
-  <p>Java Developer | Backend Enthusiast</p>
-  <a class="btn" href="#projects">View Projects</a>
+<!-- NAV -->
+<header class="nav">
+  <div class="container nav-inner">
+    <h1 class="logo">Prem<span>.</span></h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
 </header>
 
-<section id="about">
-  <h2>About Me</h2>
-  <p>
-I am a Java backend developer with hands-on experience in building
-real-world applications using Core Java, JDBC, SQL, and MySQL.
-Currently learning Spring Boot and focused on writing clean,
-maintainable code.
+<!-- HERO -->
+<section class="hero">
+  <div class="container hero-grid">
+    <div>
+      <h2>Java Backend Developer</h2>
+      <p>
+        I build clean, efficient backend applications using
+        <strong>Java, JDBC, SQL, and Spring Boot</strong>.
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn">View Projects</a>
+        <a href="resume.pdf" class="btn outline">Download Resume</a>
+      </div>
+    </div>
 
-  </p>
-</section>
-
-<section id="skills">
-  <h2>Skills</h2>
-  <div class="skills">
-    <span>Java</span>
-    <span>Spring Boot</span>
-    <span>JDBC</span>
-    <span>SQL</span>
-    <span>MySQL</span>
-    <span>HTML</span>
-    <span>CSS</span>
-    <span>JavaScript</span>
-    <span>Git</span>
+    <img src="profile.jpg" class="hero-img" />
   </div>
 </section>
 
-<section id="projects">
-  <h2>Projects</h2>
-
-  <div class="project-card">
-    <h3>Smart Inventory System</h3>
-    <p>Java-based system to manage inventory efficiently.</p>
-    <a href="https://github.com/PremWaje03/Smart-Inventory-System" target="_blank">GitHub →</a>
+<!-- ABOUT -->
+<section id="about" class="section">
+  <div class="container narrow">
+    <h3>About Me</h3>
+    <p>
+      I am a Java backend developer with hands-on experience in building
+      real-world applications using Core Java, JDBC, SQL, and MySQL.
+      Currently learning Spring Boot and focused on writing
+      clean, maintainable, production-ready code.
+    </p>
   </div>
-
-  <div class="project-card">
-    <h3>Electricity Billing System</h3>
-    <p>Core Java + JDBC based billing management application.</p>
-    <a href="https://github.com/PremWaje03/Electricity-Billing-System" target="_blank">GitHub →</a>
-  </div>
-
 </section>
 
-<section id="contact">
-  <h2>Contact</h2>
-  <p>Email: wajeprem0301@gmail.com</p>
-  <p>
-    GitHub:
-    <a href="https://github.com/PremWaje03" target="_blank">
-      github.com/PremWaje03
-    </a>
-  </p>
+<!-- SKILLS -->
+<section id="skills" class="section bg">
+  <div class="container">
+    <h3>Skills</h3>
 
-  <a class="btn resume" href="resume.pdf" target="_blank">Download Resume</a>
+    <div class="skills-grid">
+      <span>Java</span>
+      <span>Spring Boot</span>
+      <span>JDBC</span>
+      <span>SQL</span>
+      <span>MySQL</span>
+      <span>HTML</span>
+      <span>CSS</span>
+      <span>JavaScript</span>
+      <span>Git</span>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="section">
+  <div class="container">
+    <h3>Projects</h3>
+
+    <div class="projects-grid">
+      <div class="project">
+        <h4>Smart Inventory System</h4>
+        <p>
+          Inventory management system using Java and JDBC with
+          database-driven operations.
+        </p>
+        <a href="https://github.com/PremWaje03/Smart-Inventory-System" target="_blank">
+          View on GitHub →
+        </a>
+      </div>
+
+      <div class="project">
+        <h4>Electricity Billing System</h4>
+        <p>
+          Core Java + JDBC based billing management application
+          with MySQL integration.
+        </p>
+        <a href="https://github.com/PremWaje03/Electricity-Billing-System" target="_blank">
+          View on GitHub →
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section bg">
+  <div class="container narrow">
+    <h3>Contact</h3>
+    <p>Email: <strong>wajeprem0301@gmail.com</strong></p>
+    <p>GitHub: <a href="https://github.com/PremWaje03">github.com/PremWaje03</a></p>
+  </div>
 </section>
 
 <footer>
-  <p>© 2026 Prem Waje | Built with ❤️</p>
+  © 2026 Prem Waje
 </footer>
-
 
 </body>
 </html>
