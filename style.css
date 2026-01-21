@@ -11,6 +11,26 @@ body {
   line-height: 1.6;
 }
 
+.profile-img {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  border: 4px solid #64ffda;
+}
+
+#toggle {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+}
+.dark {
+  background: #0a192f;
+  color: white;
+}
+
 /* Navbar */
 nav {
   background: #0a192f;
